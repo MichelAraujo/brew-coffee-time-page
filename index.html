@@ -3,12 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Brew Coffee Time helps specialty coffee lovers brew better coffee at home with a recipe calculator, guided pours, and an easy brew timer." />
-  <meta property="og:title" content="Brew Coffee Time — Brew better coffee at home" />
-  <meta property="og:description" content="Choose your coffee, ratio, pours and timer. Brew Coffee Time calculates the recipe and guides each pour." />
+  <title>Brew Coffee Time — Pour-over coffee timer and recipe calculator</title>
+  <meta name="description" content="Brew Coffee Time is an iOS coffee brewing app with a pour-over timer, recipe calculator, grinder clicks, ratios, guided pours, and step-by-step water targets." />
+  <meta name="keywords" content="coffee brewing app, pour-over timer, coffee recipe calculator, V60 timer, coffee ratio calculator, home coffee brewing, guided coffee timer, Brew Coffee Time" />
+  <meta name="author" content="Michel Araujo" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#070604" />
+  <link rel="canonical" href="https://michelaraujo.github.io/brew-coffee-time-page/" />
+
+  <meta property="og:site_name" content="Brew Coffee Time" />
+  <meta property="og:title" content="Brew Coffee Time — Pour-over coffee timer and recipe calculator" />
+  <meta property="og:description" content="Brew better coffee at home with an iOS app that calculates your recipe, water targets, guided pours, and brew timer." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/print1.png" />
-  <title>Brew Coffee Time — Better pour-over coffee at home</title>
+  <meta property="og:url" content="https://michelaraujo.github.io/brew-coffee-time-page/" />
+  <meta property="og:image" content="https://michelaraujo.github.io/brew-coffee-time-page/images/print1.png" />
+  <meta property="og:image:alt" content="Brew Coffee Time app recipe calculator screen" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Brew Coffee Time — Pour-over coffee timer and recipe calculator" />
+  <meta name="twitter:description" content="Calculate coffee recipes, water targets and guided pours with Brew Coffee Time for iOS." />
+  <meta name="twitter:image" content="https://michelaraujo.github.io/brew-coffee-time-page/images/print1.png" />
+  <meta name="twitter:image:alt" content="Brew Coffee Time app recipe calculator screen" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Brew Coffee Time",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "description": "Brew Coffee Time is an iOS coffee brewing app with a pour-over timer, recipe calculator, guided pours, and step-by-step water targets for better home coffee.",
+    "url": "https://michelaraujo.github.io/brew-coffee-time-page/",
+    "downloadUrl": "https://apps.apple.com/us/app/brew-coffee-time/id6748541686",
+    "image": "https://michelaraujo.github.io/brew-coffee-time-page/images/print1.png",
+    "author": {
+      "@type": "Person",
+      "name": "Michel Araujo"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Pour-over coffee timer",
+      "Coffee recipe calculator",
+      "Coffee-to-water ratio calculator",
+      "Guided brew pours",
+      "Step-by-step water targets",
+      "Grinder clicks and target brew time inputs"
+    ]
+  }
+  </script>
   <style>
     :root {
       --bg: #070604;
@@ -116,8 +162,14 @@
       color: var(--cream);
     }
 
+    .hero-copy {
+      position: relative;
+      z-index: 4;
+    }
+
     .phone-stack {
       position: relative;
+      z-index: 1;
       min-height: 660px;
     }
 
@@ -266,6 +318,7 @@
       box-shadow: var(--shadow);
     }
 
+    .screenshot-card picture,
     .screenshot-card img {
       display: block;
       width: 100%;
@@ -382,7 +435,7 @@
 <body>
   <header class="hero">
     <div class="hero-inner">
-      <div>
+      <div class="hero-copy">
         <div class="eyebrow">☕ New guided brew timer</div>
         <h1>Brew better pour-over coffee at home.</h1>
         <p class="lead">Brew Coffee Time turns your coffee amount, ratio, pours, grinder clicks and target time into a clear recipe — then guides you through each pour.</p>
@@ -392,9 +445,18 @@
         </div>
       </div>
       <div class="phone-stack" aria-label="Brew Coffee Time app screenshots">
-        <img class="phone-shot secondary" src="images/print3.png" alt="How it works guide sheet in Brew Coffee Time" />
-        <img class="phone-shot primary" src="images/print2.png" alt="Guided brew timer showing pour one and target time" />
-        <img class="phone-shot tertiary" src="images/print1.png" alt="Recipe builder and calculated pour steps" />
+        <picture>
+          <source srcset="images/print3.webp" type="image/webp" />
+          <img class="phone-shot secondary" src="images/print3.png" alt="How it works guide sheet in Brew Coffee Time" width="1320" height="2868" decoding="async" />
+        </picture>
+        <picture>
+          <source srcset="images/print2.webp" type="image/webp" />
+          <img class="phone-shot primary" src="images/print2.png" alt="Guided brew timer showing pour one and target time" width="1320" height="2868" decoding="async" />
+        </picture>
+        <picture>
+          <source srcset="images/print1.webp" type="image/webp" />
+          <img class="phone-shot tertiary" src="images/print1.png" alt="Recipe builder and calculated pour steps" width="1320" height="2868" decoding="async" />
+        </picture>
       </div>
     </div>
   </header>
@@ -426,7 +488,10 @@
 
     <section class="section how-it-works">
       <div>
-        <img class="single-phone" src="images/print3.png" alt="How it works onboarding guide in Brew Coffee Time" />
+        <picture>
+          <source srcset="images/print3.webp" type="image/webp" />
+          <img class="single-phone" src="images/print3.png" alt="How it works onboarding guide in Brew Coffee Time" width="1320" height="2868" loading="lazy" decoding="async" />
+        </picture>
       </div>
       <div>
         <div class="section-header">
@@ -482,15 +547,24 @@
       </div>
       <div class="screenshots-grid">
         <figure class="screenshot-card">
-          <img src="images/print1.png" alt="Build your recipe screen with grinder clicks, ratio, coffee amount, pours and target brew time" />
+          <picture>
+            <source srcset="images/print1.webp" type="image/webp" />
+            <img src="images/print1.png" alt="Build your recipe screen with grinder clicks, ratio, coffee amount, pours and target brew time" width="1320" height="2868" loading="lazy" decoding="async" />
+          </picture>
           <figcaption class="caption">Build a recipe with grinder clicks, ratio, coffee amount, pours and target brew time.</figcaption>
         </figure>
         <figure class="screenshot-card">
-          <img src="images/print2.png" alt="Brew recipe results and guided brew timer" />
+          <picture>
+            <source srcset="images/print2.webp" type="image/webp" />
+            <img src="images/print2.png" alt="Brew recipe results and guided brew timer" width="1320" height="2868" loading="lazy" decoding="async" />
+          </picture>
           <figcaption class="caption">Calculate water targets and follow the guided timer for each pour.</figcaption>
         </figure>
         <figure class="screenshot-card">
-          <img src="images/print3.png" alt="How it works guide sheet explaining the first setup step" />
+          <picture>
+            <source srcset="images/print3.webp" type="image/webp" />
+            <img src="images/print3.png" alt="How it works guide sheet explaining the first setup step" width="1320" height="2868" loading="lazy" decoding="async" />
+          </picture>
           <figcaption class="caption">Open “How it works” when you want quick guidance without leaving the brew flow.</figcaption>
         </figure>
       </div>

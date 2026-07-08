@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michelaraujo.github.io/brew-coffee-time-page/sitemap.xml
